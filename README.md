@@ -94,7 +94,7 @@
 - Integración con RxJS, etc.
 - Uso de bibliotecas de terceros en Angular
  
-TERCERA ETAPA: ALPHA
+* TERCERA ETAPA: ALPHA
 
 1. Introducción a Alpha
 2. Despliegue y Base de Datos
