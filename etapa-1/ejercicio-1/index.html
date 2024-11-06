@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.scss">
+    <title>Ejercicio 1</title>
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <main>
+      <form id="form-user">
+        <label>
+          Ingrese un usuario:
+          <input type="text" name="names" placeholder="Jack, Patrick, ..." />
+        </label>
+        <label>
+          Ingrese su edad:
+          <input type="number" name="age" placeholder="18, 20, ..." />
+        </label>
+        <button type="submit">Agregar usuario</button>
+      </form>
+      <h2>Lista de usuarios</h2>
+      <ul id="user-list">
+        <!-- Mostrar la lista de usuarios -->
+      </ul>
+    </main>
+  </body>
+</html>
