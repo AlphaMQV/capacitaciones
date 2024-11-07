@@ -9,16 +9,20 @@
     <script type="module" src="/src/main.ts"></script>
   </head>
   <body>
-    <div id="app" class="container">
+    <div class="container">
       <header class="book-header">
         <h1>Buscador de Libros</h1>
         <search>
           <form id="form-search">
             <input
               type="search"
+              class="input"
               placeholder="Wolfish, Hidden Pictures, The Maid..."
             />
-            <button type="submit">Buscar</button>
+            <button
+              type="submit"
+              class="button button-primary"
+            >Buscar</button>
           </form>
         </search>
       </header>
@@ -30,12 +34,16 @@
           <select>
             <option value="Todos">Todos</option>
           </select>
-          <button id="button-list" type="button">Ver mi lista</button>
+          <button
+            id="button-list"
+            type="button"
+            class="button button-accent"
+          >Ver mi lista</button>
         </div>
         <div class="book-finder">
           <section id="book-results" class="book-results">
             <div>
-              <img src="src/assets/icons/search.svg" alt="">
+              <img src="src/assets/icons/search.svg" alt="Icono de búsqueda">
               <span>Busca el libro que tanto esperas</span>
             </div>
           </section>
