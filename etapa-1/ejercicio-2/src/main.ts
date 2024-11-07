@@ -56,7 +56,7 @@ $searchInput.addEventListener('input', () => {
 function filterToDos (value: string): ToDos[] {
   // convertir a minusculas el valor
   const valueLower = value.toLowerCase()
-  const completed: boolean = 'completado'.startsWith(valueLower)
+  const completed: boolean | null = transformCompletedToBoolean(valueLower)
   return toDos.filter(
     (toDo) => {
       // return true OR false
@@ -65,4 +65,10 @@ function filterToDos (value: string): ToDos[] {
         toDo.completed === completed
     }
   )
+}
+
+function transformCompletedToBoolean (value: string): boolean | null {
+  if ('completado'.startsWith(value)) return true
+  if ('pendiente'.startsWith(value)) return false
+  return null
 }
