@@ -30,3 +30,14 @@ async function getAllToDos (): Promise<void> {
 }
 
 getAllToDos()
+
+// input
+
+// obtener la referencia al input
+const $searchInput = document.querySelector('#input-search') as HTMLInputElement
+
+// escuchar el evento input
+$searchInput.addEventListener('input', () => {
+  const { value } = $searchInput
+  console.log(value)
+})
