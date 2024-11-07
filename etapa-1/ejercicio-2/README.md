@@ -1,4 +1,4 @@
-# --------------------------- Ejercicio 2: Consulta de API y Visualización
+# Ejercicio 2: Consulta de API y Visualización
 
 Descripción: Crea una aplicación que consulte una API pública y muestre los resultados en una tabla. Añade filtros para mostrar solo ciertos resultados.
 
