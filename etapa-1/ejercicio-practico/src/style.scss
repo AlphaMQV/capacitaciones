@@ -1,0 +1,18 @@
+:root {
+  --color-background: #22222E;
+  --color-primary: #2B3C74;
+  --color-secondary: #4E4F53;
+  --color-accent: #55499A;
+  --color-text: #C5C0B1;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
