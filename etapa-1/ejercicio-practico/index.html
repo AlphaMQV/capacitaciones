@@ -9,7 +9,39 @@
     <script type="module" src="/src/main.ts"></script>
   </head>
   <body>
-    <h1>Buscador de libros</h1>
-    <div id="app"></div>
+    <div id="app" class="container">
+      <header class="book-header">
+        <h1>Buscador de Libros</h1>
+        <search>
+          <form id="form-search">
+            <input
+              type="search"
+              placeholder="Wolfish, Hidden Pictures, The Maid..."
+            />
+            <button type="submit">Buscar</button>
+          </form>
+        </search>
+      </header>
+      <main class="book-main">
+        <div class="result-label">
+          <span>Busca libros disponibles</span>
+        </div>
+        <div class="book-actions">
+          <select>
+            <option value="Todos">Todos</option>
+          </select>
+          <button id="button-list" type="button">Ver mi lista</button>
+        </div>
+        <div class="book-finder">
+          <section id="book-results" class="book-results">
+            <div>
+              <img src="src/assets/icons/search.svg" alt="">
+              <span>Busca el libro que tanto esperas</span>
+            </div>
+          </section>
+          <section id="book-list" class="book-list"></section>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
