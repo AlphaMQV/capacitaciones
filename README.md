@@ -1,6 +1,6 @@
 # CAPACITACIONES
 
-* PRIMERA ETAPA: JAVASCRIPT Y TYPESCRIPT
+** PRIMERA ETAPA: JAVASCRIPT Y TYPESCRIPT
 
 1. Introducción a JavaScript
 - Sintaxis básica y tipos de datos
