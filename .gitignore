@@ -32,9 +32,9 @@ dist-ssr
 pnpm-lock.yaml
 package-lock.json
 
-/tmp
-/out-tsc
-/bazel-out
+tmp
+out-tsc
+bazel-out
 
 # IDEs and editors
 .project
@@ -45,14 +45,14 @@ package-lock.json
 *.sublime-workspace
 
 # Miscellaneous
-/.angular
-/.angular/cache
+.angular
+.angular/cache
 .sass-cache/
 .connect.lock
-/coverage
-/libpeerconnection.log
+coverage
+libpeerconnection.log
 testem.log
-/typings
+typings
 
 # System files
 Thumbs.db
