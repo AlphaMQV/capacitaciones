@@ -148,7 +148,6 @@ body {
       display: grid;
       place-content: center;
       row-gap: 2em; // 32px
-      display: none;
       img {
         width: 4.313rem; // 69px
         height: 4.313rem; // 69px
@@ -162,7 +161,10 @@ body {
       }
     }
     .view-found {
-      background-color: red;
     }
   }
+}
+
+.hidden {
+  display: none !important;
 }
