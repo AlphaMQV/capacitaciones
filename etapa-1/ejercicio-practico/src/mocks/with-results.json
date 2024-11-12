@@ -1,0 +1,870 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 741,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "RQCNEAAAQBAJ",
+      "etag": "CjLjWYjLwHQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/RQCNEAAAQBAJ",
+      "volumeInfo": {
+        "title": "Juego de tronos / A Game of Thrones",
+        "authors": [
+          "George R. R. Martin"
+        ],
+        "publisher": "National Geographic Books",
+        "publishedDate": "2012-05-01",
+        "description": "Con Juego de Tronos George R. R. Martin ha creado una obra maestra, ofreciendo todos los mejores aspectos del género. Misterio, intriga, romance y aventura llenan las páginas de este primer volumen de la monumental saga Canción de hielo y fuego, transportando al lector a un mundo como ningún otro. En el legendario mundo de los Siete Reinos, donde el verano puede durar décadas y el invierno toda una vida, y donde rastros de una magia primitiva surgen en los rincones más sombríos, la tierra del norte, Invernalia, está protegida por un colosal muro de hielo que detiene a fuerzas oscuras y sobrenaturales. En este majestuoso escenario, lord Stark y su familia se encuentran en el centro de un conflicto que desatará todas las pasiones: la traición y la lealtad, la compasión y la sed de venganza, el amor y el poder, la lujuria y el incesto, todo ello para ganar la más mortal de las batallas: el juego de tronos. Ya considerado un clásico moderno, la impresionante serie de Martin perdurará como uno de los grandes logros de la imaginación y de la literatura fantástica. ENGLISH DESCRIPTION THE BOOK BEHIND THE FIRST SEASON OF THE ACCLAIMED HBO SERIES GAME OF THRONES #1 NEW YORK TIMES BESTSELLER A SONG OF ICE AND FIRE SERIES: BOOK 1 Winter is coming. Such is the stern motto of House Stark, the northernmost of the fiefdoms that owe allegiance to King Robert Baratheon in far-off King’s Landing. There Eddard Stark of Winterfell rules in Robert’s name. There his family dwells in peace and comfort: his proud wife, Catelyn; his sons Robb, Brandon, and Rickon; his daughters Sansa and Arya; and his bastard son, Jon Snow. Far to the north, behind the towering Wall, lie savage Wildings and worse—unnatural things relegated to myth during the centuries-long summer, but proving all too real and all too deadly in the turning of the season. Yet a more immediate threat lurks to the south, where Jon Arryn, the Hand of the King, has died under mysterious circumstances. Now Robert is riding north to Winterfell, bringing his queen, the lovely but cold Cersei, his son, the cruel, vainglorious Prince Joffrey, and the queen’s brothers Jaime and Tyrion of the powerful and wealthy House Lannister—the first a swordsman without equal, the second a dwarf whose stunted stature belies a brilliant mind. All are heading for Winterfell and a fateful encounter that will change the course of kingdoms. Meanwhile, across the Narrow Sea, Prince Viserys, heir of the fallen House Targaryen, which once ruled all of Westeros, schemes to reclaim the throne with an army of barbarian Dothraki—whose loyalty he will purchase in the only coin left to him: his beautiful yet innocent sister, Daenerys.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780307951182"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0307951189"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=RQCNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=RQCNEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.pe/books?id=RQCNEAAAQBAJ&dq=Game+of+thrones&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com.pe/books?id=RQCNEAAAQBAJ&dq=Game+of+thrones&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Juego_de_tronos_A_Game_of_Thrones.html?hl=&id=RQCNEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "PE",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "PE",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=RQCNEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "ENGLISH DESCRIPTION THE BOOK BEHIND THE FIRST SEASON OF THE ACCLAIMED HBO SERIES GAME OF THRONES #1 NEW YORK TIMES BESTSELLER A SONG OF ICE AND FIRE SERIES: BOOK 1 Winter is coming."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "D6MC0AEACAAJ",
+      "etag": "5Pw5rywf7Js",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/D6MC0AEACAAJ",
+      "volumeInfo": {
+        "title": "Juego de tronos (Canción de hielo y fuego 1)",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8401032423"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788401032424"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.pe/books?id=D6MC0AEACAAJ&dq=Game+of+thrones&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com.pe/books?id=D6MC0AEACAAJ&dq=Game+of+thrones&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Juego_de_tronos_Canci%C3%B3n_de_hielo_y_fueg.html?hl=&id=D6MC0AEACAAJ"
+      },
+      "saleInfo": {
+        "country": "PE",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "PE",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=D6MC0AEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "igB2BgAAQBAJ",
+      "etag": "d1fUrS0UjJM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/igB2BgAAQBAJ",
+      "volumeInfo": {
+        "title": "El caballero de los Siete Reinos (Canción de hielo y fuego 0)",
+        "subtitle": "La precuela de la saga que inspiró la filmación de la aclamada serie televisiva de HBO",
+        "authors": [
+          "George R.R. Martin"
+        ],
+        "publisher": "PLAZA JANÉS",
+        "publishedDate": "2015-04-15",
+        "description": "Cien años antes de Juego de tronos... llega por fin la precuela de la aclamada Canción de hielo y fuego... La precuela de la saga que inspiró la filmación de la aclamada serie televisiva de HBO: Game of Thrones. Cien años antes de Juego de tronos... llega por fin la precuela de la aclamada Canción de hielo y fuego... La precuela de la saga que inspiró la filmación de la aclamada serie televisiva de HBO: Game of Thrones. Doscientos años después de la Conquista, la dinastía Targaryen vive su apogeo. Los Siete Reinos de Poniente atraviesan un momento de relativa paz en los últimos años del gobierno del rey Daeron. Es en este escenario que Dunk, un muchacho pobre del Lecho de Pulgas, tiene la oportunidad única de dejar su vida miserable y convertirse en el escudero de un auténtico caballero. Pronto, el caballero muere y Dunk decide tomar su lugar y hacer historia en el torneo de Vado Ceniza. Ahí conoce a Egg, un niño de diez años, tímido y enjuto, quien es mucho más de lo que aparenta. Dunk lo acepta como su escudero y mientras viajan juntos por Poniente en busca de trabajo y aventuras, una amistad duradera nace entre ellos. Años más tarde, ambos tendrán un papel fundamental en la estructura de poder de los Siete Reinos. Los tres relatos que conforman El caballero de los Siete Reinos sumergirán al lector en un mundo más amable que el de Juego de tronos, aunque ya muestra la semilla de los acontecimientos sangrientos, alucinantes e inesperados del futuro. Llenas de torneos y parafernalia medieval, romance y aventura, éstas historias se ubican varias décadas antes de que los Stark comenzaran a declarar \"Se acerca el invierno\", y de que el mundo se convirtiera en un lugar oscuro y sin escrúpulos. Al final de este volumen se abrirán posibilidades en el complejo universo de Canción de hielo y fuego, hasta la entrega de los últimos relatos de esta precuela.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9786073129688"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "6073129688"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 375,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 2,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.21.19.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=igB2BgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=igB2BgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.pe/books?id=igB2BgAAQBAJ&pg=PP1&dq=Game+of+thrones&hl=&cd=3&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=igB2BgAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=igB2BgAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "PE",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 62.9,
+          "currencyCode": "PEN"
+        },
+        "retailPrice": {
+          "amount": 62.9,
+          "currencyCode": "PEN"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=igB2BgAAQBAJ&rdid=book-igB2BgAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 62900000,
+              "currencyCode": "PEN"
+            },
+            "retailPrice": {
+              "amountInMicros": 62900000,
+              "currencyCode": "PEN"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "PE",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.pe/books/download/El_caballero_de_los_Siete_Reinos_Canci%C3%B3-sample-epub.acsm?id=igB2BgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.pe/books/download/El_caballero_de_los_Siete_Reinos_Canci%C3%B3-sample-pdf.acsm?id=igB2BgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=igB2BgAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Cien años antes de Juego de tronos... llega por fin la precuela de la aclamada Canción de hielo y fuego."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "krMsDwAAQBAJ",
+      "etag": "GGS3wg4RnH8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/krMsDwAAQBAJ",
+      "volumeInfo": {
+        "title": "Paquete Digital Canción de Hielo y Fuego (5 libros)",
+        "authors": [
+          "George R.R. Martin"
+        ],
+        "publisher": "PLAZA JANÉS",
+        "publishedDate": "2017-07-15",
+        "description": "La monumental saga de fantasía épica del escritor George R. R. Martin, que inspiró la aclamada serie televisiva de HBO: Game of Thrones. Ahora reunida por primera vez en un paquete digital. \"Una de las mejores series en la historia de la literatura fantástica\"-Los Angeles Times- Libro 1. Juego de tronos:En el legendario mundo de los Siete Reinos, lord Stark y su familia se encuentran en el centro de un conflicto que desatará todas las pasiones y la más mortal de las batallas... Libro 2. Choque de reyes: Cuatro nobles se proclaman, a la vez, reyes legítimos, y las tierras de Poniente se estremecen entre guerras y traiciones. Un horror presidido por la más ominosa de las señales: un inmenso cometa color sangre suspendido en el cielo. Libro 3. Tormenta de espadas: Mientras empeoran la violencia y el clima en los Siete Reinos, otra fuerza armada, surge desde más allá del Muro de Hielo: se trata de los Otros, un ejército sobrenatural de muertos vivientes, cuyos cuerpos inertes no podrán ser detenidos. Libro 4. Festín de cuervos: Luego de siglos de guerras descarnadas, los siete poderes que dividen la tierra han alcanzado una difícil tregua. Pero no pasa mucho tiempo antes de que los sobrevivientes, los proscritos, los renegados y los carroñeros de los Siete Reinos se reúnan... Libro 5. Danza de dragones: De todos los rincones, enconados conflictos cobran nuevos bríos, traiciones íntimas se perpetran y un gran elenco de proscritos y sacerdotes, soldados y criaturas camaleónicas, nobles y esclavos, enfrentarán obstáculos en apariencia insuperables.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9786073155731"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "6073155735"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 6100,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.5.6.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=krMsDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=krMsDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.pe/books?id=krMsDwAAQBAJ&printsec=frontcover&dq=Game+of+thrones&hl=&cd=4&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=krMsDwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=krMsDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "PE",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 127.9,
+          "currencyCode": "PEN"
+        },
+        "retailPrice": {
+          "amount": 127.9,
+          "currencyCode": "PEN"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=krMsDwAAQBAJ&rdid=book-krMsDwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 127900000,
+              "currencyCode": "PEN"
+            },
+            "retailPrice": {
+              "amountInMicros": 127900000,
+              "currencyCode": "PEN"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "PE",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.pe/books/download/Paquete_Digital_Canci%C3%B3n_de_Hielo_y_Fueg-sample-epub.acsm?id=krMsDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.pe/books/download/Paquete_Digital_Canci%C3%B3n_de_Hielo_y_Fueg-sample-pdf.acsm?id=krMsDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=krMsDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "La monumental saga de fantasía épica del escritor George R. R. Martin, que inspiró la aclamada serie televisiva de HBO: Game of Thrones."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "l849AwAAQBAJ",
+      "etag": "7K5FFOr3bxQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/l849AwAAQBAJ",
+      "volumeInfo": {
+        "title": "Danza de dragones (Canción de hielo y fuego 5)",
+        "subtitle": "La inspiración para la serie original de HBO®",
+        "authors": [
+          "George R.R. Martin"
+        ],
+        "publisher": "PLAZA JANÉS",
+        "publishedDate": "2014-04-04",
+        "description": "Después de una colosal batalla, el futuro de los Siete Reinos pende de un hilo, acuciado por nuevas amenazas que cobran brío en todos sus rincones... Danza de dragones es el quinto volumen de Canción de hielo y fuego, la monumental saga de fantasía épica del escritor George R. R. Martin que ha vendido más de 20 millones de ejemplares en todo el mundo. La saga que inspiró la filmación de la aclamada serie televisiva de HBO: Game of Thrones Después de una colosal batalla, el futuro de los Siete Reinos pende de un hilo, acuciado por nuevas amenazas que emergen de todos los rincones y en todas direcciones. En el este, Daenerys Targaryen, el último eslabón de la Casa Targaryen, gobierna con sus tres dragones como la reina de una ciudad construida sobre polvo y muerte. Pero Daenerys tiene miles de enemigos, y muchos se han propuesto dar con ella. A medida que ellos la buscan, un joven emprende su propio camino hacia la reina, con un objetivo diametralmente distinto... Tyrion Lannister también se dirige hacia Daenerys mientras escapa de Poniente, donde le han puesto precio a su cabeza. Sus nuevos aliados en esta huida, no obstante, no son los malhechores que aparentan ser, y entre ellos se encuentra aquel que podría impedir que Daenerys se haga del control de Poniente para siempre. Mientras tanto, al norte se halla el colosal Muro de Hielo. Allí, Jon Nieve enfrentará el más grande de los retos: sus más acérrimos enemigos no sólo forman parte de la guardia que dirige, sino que se extienden más allá de la tenebrosa tierra de las criaturas de hielo. De todos los rincones, enconados conflictos cobran nuevos bríos, traiciones íntimas se perpetran y un gran elenco de proscritos y sacerdotes, soldados y criaturas camaleónicas, nobles y esclavos, enfrentarán obstáculos en apariencia insuperables. Algunos fracasarán, otros crecerán en la fuerza de la oscuridad. Pero en tiempos de agitación in crescendo, los hilos del destino y la política arrastrarán a los personajes y al lector, inevitablemente, a la más espectacular de las danzas.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9786073123709"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "6073123701"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 1464,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.18.19.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=l849AwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=l849AwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.pe/books?id=l849AwAAQBAJ&printsec=frontcover&dq=Game+of+thrones&hl=&cd=5&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=l849AwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=l849AwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "PE",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 62.9,
+          "currencyCode": "PEN"
+        },
+        "retailPrice": {
+          "amount": 62.9,
+          "currencyCode": "PEN"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=l849AwAAQBAJ&rdid=book-l849AwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 62900000,
+              "currencyCode": "PEN"
+            },
+            "retailPrice": {
+              "amountInMicros": 62900000,
+              "currencyCode": "PEN"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "PE",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.pe/books/download/Danza_de_dragones_Canci%C3%B3n_de_hielo_y_fu-sample-epub.acsm?id=l849AwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.pe/books/download/Danza_de_dragones_Canci%C3%B3n_de_hielo_y_fu-sample-pdf.acsm?id=l849AwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=l849AwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Danza de dragones es el quinto volumen de Canción de hielo y fuego, la monumental saga de fantasía épica del escritor George R. R. Martin que ha vendido más de 20 millones de ejemplares en todo el mundo."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "320QEQAAQBAJ",
+      "etag": "GMUMVTO9M7o",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/320QEQAAQBAJ",
+      "volumeInfo": {
+        "title": "1000 Game of Thrones Facts",
+        "authors": [
+          "Scott Ambrose"
+        ],
+        "publisher": "epubli",
+        "publishedDate": "2024-06-25",
+        "description": "Delve deep into the intricate world of Westeros with this comprehensive fact book about the hit series. From the noble houses and their sigils to the blood-soaked battles and historical allusions, this book covers everything fans need to know about the epic fantasy saga. Actors, characters, behind the scenes, episodes, influences, differences from the books and so on. All this and much more awaits in 1000 Game of Thrones facts.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9783759831972"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "3759831974"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 145,
+        "printType": "BOOK",
+        "categories": [
+          "Performing Arts"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=320QEQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=320QEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.pe/books?id=320QEQAAQBAJ&pg=PT13&dq=Game+of+thrones&hl=&cd=6&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=320QEQAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=320QEQAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "PE",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 17.9,
+          "currencyCode": "PEN"
+        },
+        "retailPrice": {
+          "amount": 17.9,
+          "currencyCode": "PEN"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=320QEQAAQBAJ&rdid=book-320QEQAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 17900000,
+              "currencyCode": "PEN"
+            },
+            "retailPrice": {
+              "amountInMicros": 17900000,
+              "currencyCode": "PEN"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "PE",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=320QEQAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eGame of Thrones\u003c/b\u003e and George RR Martin felt there was enough material for twelve. Dan Weiss and David Benioff decided to end the show after eight seasons though. (74) When the eighth season \u003cb\u003egot\u003c/b\u003e a poor reception from fans, Dan Weiss and&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "DTckDwAAQBAJ",
+      "etag": "siks4d5MDoM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/DTckDwAAQBAJ",
+      "volumeInfo": {
+        "title": "e-Pedia: Game of Thrones (season 6)",
+        "subtitle": "The sixth season of the fantasy drama television series Game of Thrones was ordered by HBO on April 8, 2014, together with the fifth season",
+        "authors": [
+          "Wikipedia Contributors"
+        ],
+        "publisher": "e-Pedia",
+        "publishedDate": "2017-02-22",
+        "description": "This carefully crafted ebook is formatted for your eReader with a functional and detailed table of contents. The sixth season of the fantasy drama television series Game of Thrones premiered on HBO on April 24, 2016, and concluded on June 26, 2016. It consists of ten episodes, each of approximately 50–60 minutes, largely of original content not found in George R. R. Martin's A Song of Ice and Fire series. Some material is adapted from the upcoming sixth novel The Winds of Winter and the fourth and fifth novels, A Feast for Crows and A Dance with Dragons. The series was adapted for television by David Benioff and D. B. Weiss. HBO ordered the season on April 8, 2014, together with the fifth season, which began filming in July 2015 primarily in Northern Ireland, Spain, Croatia, Iceland and Canada. Each episode cost over $10 million. This book has been derived from Wikipedia: it contains the entire text of the title Wikipedia article + the entire text of all the 593 related (linked) Wikipedia articles to the title article. This book does not contain illustrations. e-Pedia (an imprint of e-artnow) charges for the convenience service of formatting these e-books for your eReader. We donate a part of our net income after taxes to the Wikimedia Foundation from the sales of all books based on Wikipedia content.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9788026855583"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "8026855582"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 3682,
+        "printType": "BOOK",
+        "categories": [
+          "Reference"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.2.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=DTckDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=DTckDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.pe/books?id=DTckDwAAQBAJ&pg=PP29&dq=Game+of+thrones&hl=&cd=7&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=DTckDwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=DTckDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "PE",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 7.46,
+          "currencyCode": "PEN"
+        },
+        "retailPrice": {
+          "amount": 7.46,
+          "currencyCode": "PEN"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=DTckDwAAQBAJ&rdid=book-DTckDwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 7460000,
+              "currencyCode": "PEN"
+            },
+            "retailPrice": {
+              "amountInMicros": 7460000,
+              "currencyCode": "PEN"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "PE",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=DTckDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The sixth season of the fantasy drama television series \u003cb\u003eGame of Thrones\u003c/b\u003e was ordered by HBO on April 8, 2014, together with the fifth season Wikipedia Contributors. 100. ^ Kain , Eric ( June 15 , 2015 ) . &quot; &#39; \u003cb\u003eGame of Thrones\u003c/b\u003e &#39; Season 5&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "tM82AwAAQBAJ",
+      "etag": "mNq+mD4rLlw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/tM82AwAAQBAJ",
+      "volumeInfo": {
+        "title": "Festín de cuervos (Canción de hielo y fuego 4)",
+        "subtitle": "La inspiración para la serie original de HBO®",
+        "authors": [
+          "George R.R. Martin"
+        ],
+        "publisher": "PLAZA JANÉS",
+        "publishedDate": "2014-04-04",
+        "description": "Luego de siglos de guerras descarnadas, los siete poderes que dividen la tierra han alcanzado una difícil tregua. Pero no pasa mucho tiempo antes de que los sobrevivientes, los proscritos, los renegados y los carroñeros de los Siete Reinos se reúnan... Festín de cuervos es el cuarto volumen de Canción de hielo y fuego, la monumental saga de fantasía épica del escritor George R. R. Martin que ha vendido más de 20 millones de ejemplares en todo el mundo. La saga que inspiró la filmación de la aclamada serie televisiva de HBO: Game of Thrones. Cuando se apaga el clamor de las espadas, solamente queda carroña para los cuervos. Luego de siglos de guerras descarnadas, los siete poderes que dividen la tierra se han diezmado unos a otros hasta alcanzar una difícil tregua. Muy pocos reclamos legítimos existen ya por el Trono de Hierro, y la guerra que ha convertido al mundo en poco más que un desierto al fin ha terminado. O eso parece. Pero no pasa mucho tiempo antes de que los sobrevivientes, los proscritos, los renegados y los carroñeros de los Siete Reinos se reúnan. Ahora, como cuervos humanos que acechan un banquete de cenizas, nuevas intrigas y peligrosas alianzas se forman, a la vez que rostros sorprendentes algunos familiares, otros desconocidos emergen de un siniestro crepúsculo de caos y luchas pasadas para asumir los desafíos de los terribles tiempos que se avecinan. Nobles y plebeyos, soldados y hechiceros, asesinos y sabios se unen para hacer valer su vida y sus fortunas. Porque en un festín de cuervos, muchos son los invitados... pero sólo unos pocos logran sobrevivir.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9786073123693"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "6073123698"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 1145,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.25.22.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=tM82AwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=tM82AwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.pe/books?id=tM82AwAAQBAJ&printsec=frontcover&dq=Game+of+thrones&hl=&cd=8&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=tM82AwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=tM82AwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "PE",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 62.9,
+          "currencyCode": "PEN"
+        },
+        "retailPrice": {
+          "amount": 62.9,
+          "currencyCode": "PEN"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=tM82AwAAQBAJ&rdid=book-tM82AwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 62900000,
+              "currencyCode": "PEN"
+            },
+            "retailPrice": {
+              "amountInMicros": 62900000,
+              "currencyCode": "PEN"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "PE",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.pe/books/download/Fest%C3%ADn_de_cuervos_Canci%C3%B3n_de_hielo_y_f-sample-epub.acsm?id=tM82AwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.pe/books/download/Fest%C3%ADn_de_cuervos_Canci%C3%B3n_de_hielo_y_f-sample-pdf.acsm?id=tM82AwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=tM82AwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Festín de cuervos es el cuarto volumen de Canción de hielo y fuego, la monumental saga de fantasía épica del escritor George R. R. Martin que ha vendido más de 20 millones de ejemplares en todo el mundo."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "BYUHCwAAQBAJ",
+      "etag": "M/YtcUUoOCs",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/BYUHCwAAQBAJ",
+      "volumeInfo": {
+        "title": "El mundo de hielo y fuego",
+        "subtitle": "La historia no contada de Poniente y el Juego de Tronos",
+        "authors": [
+          "George R.R. Martin"
+        ],
+        "publisher": "GRIJALBO",
+        "publishedDate": "2015-12-30",
+        "description": "La historia nunca antes vista de Poniente y de las otras tierras del universo de Juego de tronos, con cientos de páginas de nuevos contenidos. Si el pasado es prólogo, la obra maestra de George R.R. Martin -Juego de Tronos, la saga fantástica más innovadora y trepidante de nuestra época- se merecía una introducción excepcional. Por fin, con El mundo de hielo y fuego, la tenemos. Con más de 170 imágenes originales a todo color. Este libro magníficamente ilustrado es una historia completa de los Siete Reinos, animada por vibrantes descripciones de las épicas batallas, enconadas rivalidades y audaces rebeliones que desembocan en la trama de Canción de hielo y fuego y de la serie de HBO Game of thrones. En una colaboración preparada desde hace años, George R.R. Martin ha formado equipo con Elio M. García Jr. y Linda Antonsson, fundadores del prestigioso fan site Westeros.org, quizá las únicas personas que conocen casi tan bien el mundo de la saga como su visionario creador. Se reúne aquí todo el saber acumulado, todas las teorías eruditas y todo el acervo de relatos populares de maestres, septones, magos y bardos, en una crónica que empieza por la Era del Amanecer y sigue por la Edad de los Héroes, la aparición de los primeros hombres, la llegada de Aegon el Conquistador, el establecimiento del Trono de Hierro por Aegon, la Rebelión de Robert y la caída del Rey Loco, Aerys II Targaryen, causantes de las peripecias \"actuales\" de los Stark, los Lannister, los Baratheon y los Targaryen. Complemento definitivo del universo que tan deslumbrantemente ha ideado George R.R. Martin, El mundo de hielo y fuego es sin duda la demostración de que es más poderosa la pluma que una tormenta de espadas.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9786073140560"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "6073140568"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 696,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "2.11.11.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=BYUHCwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=BYUHCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.pe/books?id=BYUHCwAAQBAJ&printsec=frontcover&dq=Game+of+thrones&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.com.pe/books?id=BYUHCwAAQBAJ&dq=Game+of+thrones&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/El_mundo_de_hielo_y_fuego.html?hl=&id=BYUHCwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "PE",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "PE",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=BYUHCwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Complemento definitivo del universo que tan deslumbrantemente ha ideado George R.R. Martin, El mundo de hielo y fuego es sin duda la demostración de que es más poderosa la pluma que una tormenta de espadas."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "IQPsEAAAQBAJ",
+      "etag": "zt3p+1LcXdM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/IQPsEAAAQBAJ",
+      "volumeInfo": {
+        "title": "Fan Phenomena: Game of Thrones",
+        "authors": [
+          "Kavita Mudan Finn"
+        ],
+        "publisher": "Intellect Books",
+        "publishedDate": "2017-05-01",
+        "description": "Winter is coming. Every Sunday night, millions of fans gather around their televisions to take in the spectacle that is a new episode of Game of Thrones. Much is made of who will be gruesomely murdered each week on the hit show, though sometimes the question really is who won’t die a fiery death. The show, based on the Song of Ice and Fire series written by George R. R. Martin, is a truly global phenomenon. With the seventh season of the HBO series in production, Game of Thrones has been nominated for multiple awards, its cast has been catapulted to celebrity and references to it proliferate throughout popular culture. Often positioned as the grittier antithesis to J. R. R. Tolkien’s Lord of the Rings, Martin’s narrative focuses on the darker side of chivalry and heroism, stripping away these higher ideals to reveal the greed, amorality and lust for power underpinning them. Fan Phenomena: Game of Thrones is an exciting new addition to the Intellect series, bringing together academics and fans of Martin’s universe to consider not just the content of the books and HBO series, but fan responses to both. From trivia nights dedicated to minutiae to forums speculating on plot twists to academics trying to make sense of the bizarre climate of Westeros, everyone is talking about Game of Thrones. Edited by Kavita Mudan Finn, the book focuses on the communities created by the books and television series and how these communities envision themselves as consumers, critics, and even creators of fanworks in a wide variety of media, including fiction, art, fancasting and cosplay.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781783207855"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "178320785X"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 206,
+        "printType": "BOOK",
+        "categories": [
+          "Art"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.1.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=IQPsEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=IQPsEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.pe/books?id=IQPsEAAAQBAJ&pg=PA95&dq=Game+of+thrones&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com.pe/books?id=IQPsEAAAQBAJ&dq=Game+of+thrones&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Fan_Phenomena_Game_of_Thrones.html?hl=&id=IQPsEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "PE",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "PE",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.pe/books/download/Fan_Phenomena_Game_of_Thrones-sample-pdf.acsm?id=IQPsEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=IQPsEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eGame of Thrones\u003c/b\u003e , but with only a few examples found among those who tag for ASOIAF . Though Jojen Reed is a more prominent character in ASOIAF than in \u003cb\u003eGame of Thrones\u003c/b\u003e , and features heavily in Bran Stark&#39;s point - of - view chapters&nbsp;..."
+      }
+    }
+  ]
+}
