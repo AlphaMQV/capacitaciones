@@ -45,6 +45,7 @@ package-lock.json
 *.sublime-workspace
 
 # Miscellaneous
+/.angular
 /.angular/cache
 .sass-cache/
 .connect.lock
