@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core'
+import { AfterViewInit, Component, Input, OnDestroy, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-my-first',
@@ -6,6 +6,11 @@ import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core'
   styleUrls: ['./my-first.component.scss']
 })
 export class MyFirstComponent implements OnInit, AfterViewInit, OnDestroy {
+  @Input() names?: string
+  @Input() age?: number
+
+  // @Output()
+
   constructor () {
     // inicializar variables
     // injección de dependencias
