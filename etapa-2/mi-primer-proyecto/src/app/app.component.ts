@@ -7,4 +7,8 @@ import { Component } from '@angular/core'
 })
 export class AppComponent {
   names = 'Jack Jaramillo'
+
+  handleNameChange (value: string): void {
+    this.names = value
+  }
 }

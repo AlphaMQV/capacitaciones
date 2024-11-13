@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, Input, OnDestroy, OnInit } from '@angular/core'
+import { AfterViewInit, Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core'
 
 @Component({
   selector: 'app-my-first',
@@ -9,7 +9,7 @@ export class MyFirstComponent implements OnInit, AfterViewInit, OnDestroy {
   @Input() names?: string
   @Input() age?: number
 
-  // @Output()
+  @Output() changeName = new EventEmitter<string>()
 
   constructor () {
     // inicializar variables
@@ -37,5 +37,9 @@ export class MyFirstComponent implements OnInit, AfterViewInit, OnDestroy {
     // eliminar listeners
     // eliminar intervalos
     console.log('ngOnDestroy')
+  }
+
+  hancleChangeName (): void {
+    this.changeName.emit('Patrick')
   }
 }
