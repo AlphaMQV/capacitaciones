@@ -14,6 +14,8 @@ export class MyFirstComponent implements OnInit, AfterViewInit, OnDestroy {
   // inyección de dependencias
   private myFirstSvc = inject(MyFirstService)
 
+  // localVariable
+
   constructor () {
     // inicializar variables
     // injección de dependencias
@@ -27,6 +29,7 @@ export class MyFirstComponent implements OnInit, AfterViewInit, OnDestroy {
     // realizar subscripciones a observables
     // peticiones http
     console.log('ngOnInit')
+    // observable.subscribe((value) => { this.localvariable = value })
   }
 
   ngAfterViewInit (): void {

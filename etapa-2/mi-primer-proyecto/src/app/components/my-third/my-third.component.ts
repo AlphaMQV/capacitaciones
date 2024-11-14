@@ -14,8 +14,6 @@ export class MyThirdComponent implements OnInit {
   // of
   myOf$ = of({ name: 'John' })
 
-  // localvariable
-
   ngOnInit (): void {
     this.mySubject$
       .subscribe((value) => { console.log(value) })
@@ -23,7 +21,6 @@ export class MyThirdComponent implements OnInit {
       .subscribe((value) => { console.log(value) })
     this.myOf$
       .subscribe((value) => { console.log(value) })
-    // observable.subscribe((value) => { this.localvariable = value })
   }
 
   emitSubject (): void {
