@@ -9,6 +9,7 @@ export class MyFirstService {
   // crear formularios reactivos
   // llamadas a servicios HTTP
   private _names: string = 'Ariel'
+  // convertir a un behavior subject e inicialiar con Ariel (names$)
 
   get names (): string {
     return this._names

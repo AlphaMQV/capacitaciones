@@ -24,6 +24,7 @@ export class MyFirstComponent implements OnInit, AfterViewInit, OnDestroy {
     // inicializar parametros
     // iniciar variables
     // llamar a servicios
+    // realizar subscripciones a observables
     // peticiones http
     console.log('ngOnInit')
   }
