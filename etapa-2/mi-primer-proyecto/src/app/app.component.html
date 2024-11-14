@@ -1,8 +1,8 @@
-<h1>Mi primera aplicación en Angular</h1>
-<span>Hola soy {{ names }}</span>
+<h1>Mi primera aplicación en {{ title }}</h1>
+<span>Hola soy {{ localVariable }}</span>
 
 <app-my-first
-  [names]="names" [age]="14"
+  [age]="14"
   (changeName)="handleNameChange($event)"
 ></app-my-first>
 

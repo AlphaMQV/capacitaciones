@@ -17,5 +17,7 @@ export class MySecondComponent {
   //   this.localVariable = this.myFirstSvc.names
   // }
 
-  localVariable: string = this.myFirstSvc.names
+  get localVariable (): string {
+    return this.myFirstSvc.names
+  }
 }

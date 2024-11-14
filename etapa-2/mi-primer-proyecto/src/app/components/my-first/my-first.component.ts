@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core'
+import { AfterViewInit, Component, EventEmitter, inject, Input, OnDestroy, OnInit, Output } from '@angular/core'
+import { MyFirstService } from 'src/app/services/my-first.service'
 
 @Component({
   selector: 'app-my-first',
@@ -6,10 +7,12 @@ import { AfterViewInit, Component, EventEmitter, Input, OnDestroy, OnInit, Outpu
   styleUrls: ['./my-first.component.scss']
 })
 export class MyFirstComponent implements OnInit, AfterViewInit, OnDestroy {
-  @Input() names?: string
   @Input() age?: number
 
   @Output() changeName = new EventEmitter<string>()
+
+  // inyección de dependencias
+  private myFirstSvc = inject(MyFirstService)
 
   constructor () {
     // inicializar variables
@@ -41,5 +44,9 @@ export class MyFirstComponent implements OnInit, AfterViewInit, OnDestroy {
 
   hancleChangeName (): void {
     this.changeName.emit('Patrick')
+  }
+
+  get localVariable (): string {
+    return this.myFirstSvc.names
   }
 }

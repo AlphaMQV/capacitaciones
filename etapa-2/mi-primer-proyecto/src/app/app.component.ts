@@ -1,4 +1,5 @@
-import { Component } from '@angular/core'
+import { Component, inject } from '@angular/core'
+import { MyFirstService } from './services/my-first.service'
 
 @Component({
   selector: 'app-root',
@@ -6,13 +7,18 @@ import { Component } from '@angular/core'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  names = 'Jack Jaramillo'
+  // inyección de dependencias
+  private myFirstSvc = inject(MyFirstService)
 
   handleNameChange (value: string): void {
-    this.names = value
+    this.myFirstSvc.names = value
   }
 
-  disabledButton (): boolean {
-    return this.names.length === 0
+  get localVariable (): string {
+    return this.myFirstSvc.names
+  }
+
+  get title (): string {
+    return 'Angular 14'
   }
 }
