@@ -1,13 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject } from '@angular/core'
+import { MyFirstService } from 'src/app/services/my-first.service'
 
 @Component({
   selector: 'app-my-second',
   templateUrl: './my-second.component.html',
   styleUrls: ['./my-second.component.scss']
 })
-export class MySecondComponent implements OnInit {
-  constructor () { }
+export class MySecondComponent {
+  // input
+  // output
+  // injections
+  private myFirstSvc = inject(MyFirstService)
+  // constructor (
+  //   private myFirstSvc: MyFirstService
+  // ) {
+  //   this.localVariable = this.myFirstSvc.names
+  // }
 
-  ngOnInit (): void {
-  }
+  localVariable: string = this.myFirstSvc.names
 }
