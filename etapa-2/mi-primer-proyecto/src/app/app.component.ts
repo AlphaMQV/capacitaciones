@@ -11,4 +11,8 @@ export class AppComponent {
   handleNameChange (value: string): void {
     this.names = value
   }
+
+  disabledButton (): boolean {
+    return this.names.length === 0
+  }
 }
