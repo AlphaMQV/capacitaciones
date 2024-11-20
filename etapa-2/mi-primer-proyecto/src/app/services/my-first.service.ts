@@ -1,21 +1,17 @@
 import { Injectable } from '@angular/core'
+import { BehaviorSubject, Observable } from 'rxjs'
 
 @Injectable({
   providedIn: 'root'
 })
 export class MyFirstService {
-  // compartir informacion entre componentes
-  // abstraer metodos y logica de negocio
-  // crear formularios reactivos
-  // llamadas a servicios HTTP
-  private _names: string = 'Ariel'
-  // convertir a un behavior subject e inicialiar con Ariel (names$)
+  private readonly _names$ = new BehaviorSubject<string>('Ariel')
 
-  get names (): string {
-    return this._names
+  get names$ (): Observable<string> {
+    return this._names$.asObservable()
   }
 
-  set names (value: string) {
-    this._names = value
+  setNames (value: string): void {
+    this._names$.next(value)
   }
 }

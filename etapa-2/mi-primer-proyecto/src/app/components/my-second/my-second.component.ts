@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core'
+import { Component, inject, OnInit } from '@angular/core'
 import { MyFirstService } from 'src/app/services/my-first.service'
 
 @Component({
@@ -6,7 +6,7 @@ import { MyFirstService } from 'src/app/services/my-first.service'
   templateUrl: './my-second.component.html',
   styleUrls: ['./my-second.component.scss']
 })
-export class MySecondComponent {
+export class MySecondComponent implements OnInit {
   // input
   // output
   // injections
@@ -17,7 +17,11 @@ export class MySecondComponent {
   //   this.localVariable = this.myFirstSvc.names
   // }
 
-  get localVariable (): string {
-    return this.myFirstSvc.names
+  localVariable: string = ''
+
+  ngOnInit (): void {
+    this.myFirstSvc.names$.subscribe((value: string) => {
+      this.localVariable = value
+    })
   }
 }

@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, EventEmitter, inject, Input, OnDestroy, OnInit, Output } from '@angular/core'
+import { AfterViewInit, Component, inject, Input, OnDestroy, OnInit } from '@angular/core'
 import { MyFirstService } from 'src/app/services/my-first.service'
 
 @Component({
@@ -7,12 +7,13 @@ import { MyFirstService } from 'src/app/services/my-first.service'
   styleUrls: ['./my-first.component.scss']
 })
 export class MyFirstComponent implements OnInit, AfterViewInit, OnDestroy {
+  // input
   @Input() age?: number
-
-  @Output() changeName = new EventEmitter<string>()
 
   // inyección de dependencias
   private myFirstSvc = inject(MyFirstService)
+
+  localVariable: string = ''
 
   // localVariable
 
@@ -29,7 +30,11 @@ export class MyFirstComponent implements OnInit, AfterViewInit, OnDestroy {
     // realizar subscripciones a observables
     // peticiones http
     console.log('ngOnInit')
-    // observable.subscribe((value) => { this.localvariable = value })
+    this.myFirstSvc.names$
+      .subscribe((value) => {
+        // console.log(value)
+        this.localVariable = value
+      })
   }
 
   ngAfterViewInit (): void {
@@ -46,11 +51,8 @@ export class MyFirstComponent implements OnInit, AfterViewInit, OnDestroy {
     console.log('ngOnDestroy')
   }
 
-  hancleChangeName (): void {
-    this.changeName.emit('Patrick')
-  }
-
-  get localVariable (): string {
-    return this.myFirstSvc.names
+  handleChangeName (): void {
+    // this.changeName.emit('Patrick')
+    this.myFirstSvc.setNames('Patrick')
   }
 }

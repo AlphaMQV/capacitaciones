@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core'
+import { Component, inject, OnInit } from '@angular/core'
 import { MyFirstService } from './services/my-first.service'
 
 @Component({
@@ -6,16 +6,17 @@ import { MyFirstService } from './services/my-first.service'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   // inyección de dependencias
   private myFirstSvc = inject(MyFirstService)
 
-  handleNameChange (value: string): void {
-    this.myFirstSvc.names = value
-  }
+  localVariable: string = ''
 
-  get localVariable (): string {
-    return this.myFirstSvc.names
+  ngOnInit (): void {
+    this.myFirstSvc.names$
+      .subscribe((value) => {
+        this.localVariable = value
+      })
   }
 
   get title (): string {
