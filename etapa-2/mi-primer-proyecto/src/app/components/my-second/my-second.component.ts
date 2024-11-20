@@ -1,4 +1,6 @@
-import { Component, inject, OnInit } from '@angular/core'
+import { Component, inject, OnDestroy, OnInit } from '@angular/core'
+import { Subject } from 'rxjs'
+import { takeUntil } from 'rxjs/operators'
 import { MyFirstService } from 'src/app/services/my-first.service'
 
 @Component({
@@ -6,7 +8,7 @@ import { MyFirstService } from 'src/app/services/my-first.service'
   templateUrl: './my-second.component.html',
   styleUrls: ['./my-second.component.scss']
 })
-export class MySecondComponent implements OnInit {
+export class MySecondComponent implements OnInit, OnDestroy {
   // input
   // output
   // injections
@@ -19,9 +21,22 @@ export class MySecondComponent implements OnInit {
 
   localVariable: string = ''
 
+  readonly names$ = this.myFirstSvc.names$
+
+  private readonly _onDestroy$ = new Subject<void>()
+
   ngOnInit (): void {
-    this.myFirstSvc.names$.subscribe((value: string) => {
-      this.localVariable = value
-    })
+    this.myFirstSvc.names$
+      .pipe(
+        takeUntil(this._onDestroy$)
+      )
+      .subscribe((value: string) => {
+        this.localVariable = value
+      })
+  }
+
+  ngOnDestroy (): void {
+    this._onDestroy$.next()
+    this._onDestroy$.complete()
   }
 }
