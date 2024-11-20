@@ -15,6 +15,8 @@ export class MyFirstComponent implements OnInit, AfterViewInit, OnDestroy {
 
   localVariable: string = ''
 
+  inputValue: string = ''
+
   // localVariable
 
   constructor () {
@@ -53,6 +55,6 @@ export class MyFirstComponent implements OnInit, AfterViewInit, OnDestroy {
 
   handleChangeName (): void {
     // this.changeName.emit('Patrick')
-    this.myFirstSvc.setNames('Patrick')
+    this.myFirstSvc.setNames(this.inputValue)
   }
 }

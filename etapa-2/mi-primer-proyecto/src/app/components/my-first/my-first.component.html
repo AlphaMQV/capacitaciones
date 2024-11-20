@@ -1,5 +1,12 @@
 <div>
   <p>Hola soy {{ localVariable }} y tengo {{ age }} años</p>
 
-  <button type="button" (click)="handleChangeName()">Cambiar nombre</button>
+  <input type="text" [(ngModel)]="inputValue" />
+
+  <button
+    type="button"
+    (click)="handleChangeName()"
+  >
+    Cambiar nombre
+  </button>
 </div>
