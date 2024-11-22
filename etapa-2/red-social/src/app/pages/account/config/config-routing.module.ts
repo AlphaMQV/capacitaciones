@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MyPostsComponent } from './my-posts.component';
+import { ConfigComponent } from './config.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: MyPostsComponent
-  }
+    path: '', // account/config/
+    component: ConfigComponent
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class MyPostsRoutingModule { }
+export class ConfigRoutingModule { }

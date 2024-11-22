@@ -1,9 +1,8 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule } from '@angular/common'
+import { NgModule } from '@angular/core'
 
-import { PostsRoutingModule } from './posts-routing.module';
-import { PostsComponent } from './posts.component';
-
+import { PostsRoutingModule } from './posts-routing.module'
+import { PostsComponent } from './posts.component'
 
 @NgModule({
   declarations: [
