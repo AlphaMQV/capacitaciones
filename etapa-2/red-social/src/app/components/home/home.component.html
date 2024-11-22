@@ -1,1 +1,24 @@
-<p>home works!</p>
+<p>Formulario Reactivo</p>
+
+<form (ngSubmit)="handleSubmitReactive()">
+  <input
+    type="text"
+    placeholder="Nombre"
+    [formControl]="formControls.names"
+  />
+  <input
+    type="text"
+    placeholder="Edad"
+    [formControl]="formControls.age"
+  />
+  <button type="submit">Submit</button>
+</form>
+
+<hr>
+
+<p>Formulario template</p>
+
+<form (ngSubmit)="handleSubmitTemplate()">
+  <input type="text" placeholder="Nombre" />
+  <button type="submit">Submit</button>
+</form>
