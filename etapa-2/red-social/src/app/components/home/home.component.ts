@@ -1,5 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core'
-import { FormControl, FormGroup, NonNullableFormBuilder } from '@angular/forms'
+import { FormControl, FormGroup, NgForm, NonNullableFormBuilder } from '@angular/forms'
 
 interface FormI {
   names: FormControl
@@ -26,8 +26,8 @@ export class HomeComponent implements OnInit {
     console.log(this.formReactive.value)
   }
 
-  handleSubmitTemplate (): void {
-    console.log('Form submitted template')
+  handleSubmitTemplate (form: NgForm): void {
+    console.log(form.value)
   }
 
   get formControls (): FormI {

@@ -18,7 +18,8 @@
 
 <p>Formulario template</p>
 
-<form (ngSubmit)="handleSubmitTemplate()">
-  <input type="text" placeholder="Nombre" />
+<form #formTemplate="ngForm" (ngSubmit)="handleSubmitTemplate(formTemplate)">
+  <input type="text" name="names" placeholder="Nombre" ngModel required />
+  <input type="text" name="age" placeholder="Edad" ngModel />
   <button type="submit">Submit</button>
 </form>
