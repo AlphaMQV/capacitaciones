@@ -16,4 +16,8 @@ export class PostService {
     // fetch(`${this._apiUrl}/posts`)
     return this._http.get<Post[]>(`${this._apiUrl}/posts`)
   }
+
+  getPost (idDocument: string): Observable<Post> {
+    return this._http.get<Post>(`${this._apiUrl}/posts/${idDocument}`)
+  }
 }

@@ -5,3 +5,10 @@
     <p>{{ post.reactions.likes }}</p>
   </li>
 </ul>
+
+<p>Unico post</p>
+<ng-container *ngIf="post">
+  <p>{{ post.id }}</p>
+  <p>{{ post.title }}</p>
+  <p>{{ post.reactions.likes }}</p>
+</ng-container>
