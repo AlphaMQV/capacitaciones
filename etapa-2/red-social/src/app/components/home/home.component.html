@@ -1,25 +1,22 @@
-<p>Formulario Reactivo</p>
-
 <form (ngSubmit)="handleSubmitReactive()">
-  <input
-    type="text"
-    placeholder="Nombre"
-    [formControl]="formControls.names"
-  />
-  <input
-    type="text"
-    placeholder="Edad"
-    [formControl]="formControls.age"
-  />
-  <button type="submit">Submit</button>
-</form>
-
-<hr>
-
-<p>Formulario template</p>
-
-<form #formTemplate="ngForm" (ngSubmit)="handleSubmitTemplate(formTemplate)">
-  <input type="text" name="names" placeholder="Nombre" ngModel required />
-  <input type="text" name="age" placeholder="Edad" ngModel />
-  <button type="submit">Submit</button>
+  <mat-form-field appearance="fill">
+    <mat-label>Ingrese un nombre</mat-label>
+    <input
+      matInput
+      placeholder="Jack, Patrick, Ariel, etc..."
+      [formControl]="formControls.names"
+    />
+    <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Ingrese una edad</mat-label>
+    <input
+      matInput
+      type="number"
+      placeholder="12, 24, 32, etc..."
+      [formControl]="formControls.age"
+    />
+    <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+  </mat-form-field>
+  <button type="submit" mat-raised-button color="primary">Submit</button>
 </form>

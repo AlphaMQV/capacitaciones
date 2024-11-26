@@ -1,5 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core'
-import { FormControl, FormGroup, NgForm, NonNullableFormBuilder } from '@angular/forms'
+import { FormControl, FormGroup, NgForm, NonNullableFormBuilder, Validators } from '@angular/forms'
 
 interface FormI {
   names: FormControl
@@ -15,14 +15,21 @@ export class HomeComponent implements OnInit {
   private readonly _formBuilder = inject(NonNullableFormBuilder)
 
   formReactive: FormGroup<FormI> = this._formBuilder.group({
-    names: [''],
-    age: ['']
+    names: ['', [
+      Validators.required,
+      Validators.minLength(3)
+    ]],
+    age: [0, [
+      Validators.required,
+      Validators.min(18)
+    ]]
   })
 
   ngOnInit (): void {
   }
 
   handleSubmitReactive (): void {
+    if (!this.formReactive.valid) return
     console.log(this.formReactive.value)
   }
 
