@@ -1,3 +1,6 @@
 export const environment = {
-  production: true
-};
+  production: true,
+  apiPosts: {
+    url: 'https://api-capacitaciones.vercel.app'
+  }
+}
