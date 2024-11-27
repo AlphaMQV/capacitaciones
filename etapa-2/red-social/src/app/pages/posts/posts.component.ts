@@ -1,6 +1,6 @@
 import { Component, inject, OnDestroy, OnInit } from '@angular/core'
 import { Subject, takeUntil } from 'rxjs'
-import { Post } from 'src/app/interfaces/post.interface'
+import { Post, ResponsePost } from 'src/app/interfaces/post.interface'
 import { PostService } from 'src/app/services/post.service'
 
 @Component({
@@ -14,7 +14,7 @@ export class PostsComponent implements OnInit, OnDestroy {
 
   private readonly _onDestroy$ = new Subject<void>()
 
-  posts: Post[] = []
+  posts: ResponsePost[] = []
   post: Post | null = null
 
   ngOnInit (): void {
