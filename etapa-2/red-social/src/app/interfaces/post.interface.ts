@@ -11,11 +11,6 @@ export interface Post {
   userid: string
 }
 
-export interface ResponsePost {
+export interface ResponsePost extends Post {
   id: string
-  title: string
-  body: string
-  reactions: PostReaction,
-  views: number
-  userid: string
 }
