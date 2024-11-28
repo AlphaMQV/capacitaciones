@@ -1,0 +1,17 @@
+.form_publication {
+  margin-top: 20px;
+  background-color: var(--background-color);
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  .input_container {
+    mat-form-field {
+      width: 100%;
+      textarea {
+        resize: none;
+      }
+    }
+  }
+}
