@@ -1,7 +1,28 @@
-<br />
-<button
-  type="button"
-  mat-raised-button
-  color="primary"
-  (click)="addDoc()"
->Agregar</button>
+<mat-card>
+  <mat-card-title>Nueva Publicación</mat-card-title>
+  <mat-card-content>
+    <div class="card_container">
+      <div class="form_publication">
+        <div class="input_container">
+          <mat-label>Título de la Publicación</mat-label>
+          <mat-form-field appearance="outline">
+            <input matInput placeholder="Título...">
+          </mat-form-field>
+        </div>
+        <div class="input_container">
+          <mat-label>Contenido de la Publicación</mat-label>
+          <mat-form-field appearance="outline">
+            <textarea matInput placeholder="¿Qué estas pensando?" [rows]="5"></textarea>
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button
+      type="button"
+      mat-raised-button
+      color="accent"
+    >Publicar</button>
+  </mat-card-actions>
+</mat-card>
