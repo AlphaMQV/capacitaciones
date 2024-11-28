@@ -6,13 +6,24 @@
         <div class="input_container">
           <mat-label>Título de la Publicación</mat-label>
           <mat-form-field appearance="outline">
-            <input matInput placeholder="Título...">
+            <input
+              matInput
+              placeholder="Título..."
+              [formControl]="_ctrlsFormPost.title"
+            />
+            <mat-error>{{ errorString(_ctrlsFormPost.title) }}</mat-error>
           </mat-form-field>
         </div>
         <div class="input_container">
           <mat-label>Contenido de la Publicación</mat-label>
           <mat-form-field appearance="outline">
-            <textarea matInput placeholder="¿Qué estas pensando?" [rows]="5"></textarea>
+            <textarea
+              matInput
+              placeholder="¿Qué estas pensando?"
+              [rows]="5"
+              [formControl]="_ctrlsFormPost.body"
+            ></textarea>
+            <mat-error>{{ errorString(_ctrlsFormPost.body) }}</mat-error>
           </mat-form-field>
         </div>
       </div>
@@ -22,6 +33,7 @@
     <button
       type="button"
       mat-raised-button
+      [disabled]="disabledSendPost"
       color="accent"
     >Publicar</button>
   </mat-card-actions>
