@@ -7,6 +7,7 @@ import { getAuth, provideAuth } from '@angular/fire/auth'
 import { getFirestore, provideFirestore } from '@angular/fire/firestore'
 import { ReactiveFormsModule } from '@angular/forms'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { ToastrModule } from 'ngx-toastr'
 import { environment } from 'src/environments/environment'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
@@ -29,7 +30,8 @@ import { MaterialModule } from './material/material.module'
     HttpClientModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
-    provideFirestore(() => getFirestore())
+    provideFirestore(() => getFirestore()),
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

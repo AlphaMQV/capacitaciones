@@ -1,7 +1,9 @@
 import { Component, inject, OnInit } from '@angular/core'
 import { FormControl, FormGroup } from '@angular/forms'
 import { FormPost } from 'src/app/interfaces/form-post.interface'
+import { Post } from 'src/app/interfaces/post.interface'
 import { PostService } from 'src/app/services/post.service'
+import { ToastService } from 'src/app/services/toast.service'
 import { errorControlString } from 'src/app/utils/error-control-string'
 import { FormPostInit } from './helpers/form-post.init'
 
@@ -14,6 +16,7 @@ export class HomeComponent implements OnInit {
   // inject
   private readonly _postService = inject(PostService)
   private readonly _formPostInit = inject(FormPostInit)
+  private readonly _toast = inject(ToastService)
 
   private _formPost: FormGroup<FormPost>
 
@@ -32,21 +35,21 @@ export class HomeComponent implements OnInit {
 
   // ------------------------- functions -------------------------
 
-  async addDoc (): Promise<void> {
+  sendForm (): void {
+    if (this.disabledSendPost) {
+      this._toast.warning('El formulario es inválido')
+      return
+    }
+    this.addPost()
+  }
+
+  private async addPost (): Promise<void> {
     try {
-      const response = await this._postService.addPost({
-        title: 'Mi segundo post',
-        body: 'lorem ipsum dolor sit amet consectetur adipiscing elit',
-        reactions: {
-          likes: 0,
-          dislikes: 0
-        },
-        views: 0,
-        userid: ''
-      })
-      console.log(response)
-    } catch (error) {
-      console.error('Error:', error)
+      const formValue: Post = this._formPost.getRawValue()
+      await this._postService.addPost(formValue)
+      this._toast.success('Post creado correctamente')
+    } catch {
+      this._toast.error('Error al crear el post')
     }
   }
 
