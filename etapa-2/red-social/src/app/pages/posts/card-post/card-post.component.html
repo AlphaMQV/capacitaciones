@@ -11,17 +11,20 @@
       <div class="card_footer">
         <div class="footer_button">
           <button mat-button type="button">
-            {{ post.reactions.likes }} Likes
+            <mat-icon fontIcon="thumb_up"></mat-icon>
+            <span>{{ post.reactions.likes }} Likes</span>
           </button>
         </div>
         <div class="footer_button">
           <button mat-button type="button">
-            {{ post.reactions.dislikes }} Dislikes
+            <mat-icon fontIcon="thumb_down"></mat-icon>
+            <span>{{ post.reactions.dislikes }} Dislikes</span>
           </button>
         </div>
         <div class="footer_button">
           <button mat-button type="button">
-            {{ post.views }} Vistas
+            <mat-icon>visibility</mat-icon>
+            <span>{{ post.views }} Vistas</span>
           </button>
         </div>
       </div>
