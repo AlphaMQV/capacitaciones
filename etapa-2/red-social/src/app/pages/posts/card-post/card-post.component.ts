@@ -12,4 +12,14 @@ export class CardPostComponent implements OnInit {
 
   ngOnInit (): void {
   }
+
+  // --------------------- Functions ---------------------
+
+  changeButtonLike (): void {
+    console.log(this.post.id)
+  }
+
+  changeButtonDislike (): void {
+    console.log(this.post.id)
+  }
 }

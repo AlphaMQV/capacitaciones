@@ -10,22 +10,27 @@
       </div>
       <div class="card_footer">
         <div class="footer_button">
-          <button mat-button type="button">
-            <mat-icon fontIcon="thumb_up"></mat-icon>
-            <span>{{ post.reactions.likes }} Likes</span>
-          </button>
+          <app-card-post-button
+            icon="thumb_up"
+            (send)="changeButtonLike()"
+          >
+            {{ post.reactions.likes }} Likes
+          </app-card-post-button>
         </div>
         <div class="footer_button">
-          <button mat-button type="button">
-            <mat-icon fontIcon="thumb_down"></mat-icon>
-            <span>{{ post.reactions.dislikes }} Dislikes</span>
-          </button>
+          <app-card-post-button
+            icon="thumb_down"
+            (send)="changeButtonDislike()"
+          >
+            {{ post.reactions.dislikes }} Dislikes
+          </app-card-post-button>
         </div>
         <div class="footer_button">
-          <button mat-button type="button">
-            <mat-icon>visibility</mat-icon>
-            <span>{{ post.views }} Vistas</span>
-          </button>
+          <app-card-post-button
+            icon="visibility"
+          >
+            {{ post.views }} Vistas
+          </app-card-post-button>
         </div>
       </div>
     </div>

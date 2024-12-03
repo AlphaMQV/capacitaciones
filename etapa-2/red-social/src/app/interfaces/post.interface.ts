@@ -1,4 +1,4 @@
-interface PostReaction {
+export interface PostReaction {
   likes: number
   dislikes: number
 }
