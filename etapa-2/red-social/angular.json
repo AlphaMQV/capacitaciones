@@ -6,11 +6,12 @@
     "red-social": {
       "projectType": "application",
       "schematics": {
-        "@schematics/angular:application": {
+        "@schematics/angular:service": {
           "skipTests": true
         },
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "skipTests": true
         }
       },
       "root": "",

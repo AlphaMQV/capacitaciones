@@ -1,6 +1,6 @@
 import { Component, inject, OnDestroy, OnInit } from '@angular/core'
 import { Subject, takeUntil } from 'rxjs'
-import { Post, ResponsePost } from 'src/app/interfaces/post.interface'
+import { ResponsePost } from 'src/app/interfaces/post.interface'
 import { PostService } from 'src/app/services/post.service'
 
 @Component({
@@ -15,13 +15,10 @@ export class PostsComponent implements OnInit, OnDestroy {
   private readonly _onDestroy$ = new Subject<void>()
 
   posts: ResponsePost[] = []
-  post: Post | null = null
 
   ngOnInit (): void {
     // obtener posts
-    this.getPosts()
-    // obtener post indivual
-    this.getPost()
+    // this.getPosts()
   }
 
   ngOnDestroy (): void {
@@ -35,14 +32,6 @@ export class PostsComponent implements OnInit, OnDestroy {
       .pipe(takeUntil(this._onDestroy$))
       .subscribe((posts) => {
         this.posts = posts
-      })
-  }
-
-  private getPost (): void {
-    this._postService.getPost('An7VJzp0LPRBw3QXDu5T')
-      .pipe(takeUntil(this._onDestroy$))
-      .subscribe((post) => {
-        this.post = post
       })
   }
 

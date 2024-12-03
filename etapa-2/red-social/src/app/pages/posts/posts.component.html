@@ -1,14 +1,5 @@
-<ul>
-  <li *ngFor="let post of posts">
-    <p>{{ post.id }}</p>
-    <p>{{ post.title }}</p>
-    <p>{{ post.body }}</p>
-    <p>{{ post.reactions.likes }}</p>
-  </li>
-</ul>
+<!-- <app-card-post
+  *ngFor="let post of posts"
+></app-card-post> -->
 
-<p>Unico post</p>
-<ng-container *ngIf="post">
-  <p>{{ post.title }}</p>
-  <p>{{ post.reactions.likes }}</p>
-</ng-container>
+<app-card-post></app-card-post>
