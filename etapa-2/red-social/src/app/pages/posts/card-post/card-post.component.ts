@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core'
+import { ResponsePost } from 'src/app/interfaces/post.interface'
 
 @Component({
   selector: 'app-card-post',
@@ -6,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-post.component.scss']
 })
 export class CardPostComponent implements OnInit {
+  // input
+  @Input() post: ResponsePost
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit (): void {
   }
-
 }

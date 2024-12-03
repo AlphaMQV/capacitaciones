@@ -18,7 +18,7 @@ export class PostsComponent implements OnInit, OnDestroy {
 
   ngOnInit (): void {
     // obtener posts
-    // this.getPosts()
+    this.getPosts()
   }
 
   ngOnDestroy (): void {
