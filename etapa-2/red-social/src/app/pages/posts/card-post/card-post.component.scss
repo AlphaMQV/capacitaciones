@@ -1,4 +1,6 @@
 .card_container {
+  display: grid;
+  row-gap: 0.313rem;
   .card_title {
     font-size: .9rem;
     font-weight: 500;
@@ -8,6 +10,15 @@
     line-height: 1.4;
   }
   .card_footer {
-
+    display: flex;
+    column-gap: 0.625rem;
+    .footer_button {
+      button {
+        font-size: .6rem;
+        padding: 0.125rem 0.25rem;
+        min-width: auto;
+        line-height: 1;
+      }
+    }
   }
 }
