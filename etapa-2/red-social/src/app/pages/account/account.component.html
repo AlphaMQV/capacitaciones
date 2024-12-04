@@ -1,1 +1,6 @@
-<p>account works!</p>
+<app-login></app-login>
+
+<ng-container *ngIf="user">
+  <p>Usuario: {{ user.displayName }}</p>
+  <p>Correo: {{ user.email }}</p>
+</ng-container>
