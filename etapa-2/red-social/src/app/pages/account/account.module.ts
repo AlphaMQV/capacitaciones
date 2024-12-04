@@ -3,16 +3,16 @@ import { NgModule } from '@angular/core'
 
 import { AccountRoutingModule } from './account-routing.module'
 import { AccountComponent } from './account.component'
-import { LoginComponent } from './login/login.component'
+import { AuthModule } from './auth/auth.module'
 
 @NgModule({
   declarations: [
-    AccountComponent,
-    LoginComponent
+    AccountComponent
   ],
   imports: [
     CommonModule,
-    AccountRoutingModule
+    AccountRoutingModule,
+    AuthModule
   ]
 })
 export class AccountModule { }
