@@ -1,1 +1,24 @@
-<p>auth works!</p>
+<div class="auth_container">
+  <div class="card_auth">
+    <div class="card_header">
+      <button
+        type="button"
+        [ngClass]="{'active': isLoginMode}"
+        (click)="onLoginMode()"
+      >
+        Iniciar Sesión
+      </button>
+      <button
+        type="button"
+        [ngClass]="{'active': isRegisterMode}"
+        (click)="onRegisterMode()"
+      >
+        Registrarse
+      </button>
+    </div>
+    <div class="card_body">
+      <app-login *ngIf="isLoginMode"></app-login>
+      <app-register *ngIf="isRegisterMode"></app-register>
+    </div>
+  </div>
+</div>
