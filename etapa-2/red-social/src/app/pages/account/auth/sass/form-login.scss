@@ -1,0 +1,18 @@
+.login_container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.625rem;
+  .login_body {
+    .input_container {
+      mat-form-field {
+        width: 100%;
+      }
+    }
+  }
+  .login_footer {
+    button {
+      width: 100%;
+      color: #fff;
+    }
+  }
+}

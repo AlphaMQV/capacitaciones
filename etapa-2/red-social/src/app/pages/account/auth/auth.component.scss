@@ -8,6 +8,9 @@
     padding: 1.875rem;
     width: 100%;
     max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.25rem;
     .card_header {
       display: flex;
       justify-content: space-between;
