@@ -7,6 +7,7 @@
           type="email"
           matInput
           placeholder="correo@gmail.com"
+          [formControl]="ctrlsFormLogin.email"
         />
       </mat-form-field>
     </div>
@@ -16,6 +17,7 @@
         <input
           type="password"
           matInput
+          [formControl]="ctrlsFormLogin.password"
         />
       </mat-form-field>
     </div>
@@ -24,6 +26,8 @@
     <button
       mat-raised-button
       color="accent"
+      [disabled]="loading"
+      (click)="sendForm()"
     >
       Iniciar Sesión
     </button>

@@ -1,6 +1,17 @@
-<app-auth></app-auth>
+<ng-container *ngIf="!loading">
+  <app-auth *ngIf="!user; else logoutButton"></app-auth>
+</ng-container>
 
 <ng-container *ngIf="user">
-  <p>Usuario: {{ user.displayName }}</p>
   <p>Correo: {{ user.email }}</p>
 </ng-container>
+
+<ng-template #logoutButton>
+  <button
+    mat-raised-button
+    color="warn"
+    (click)="logout()"
+  >
+    Cerrar sesión
+  </button>
+</ng-template>
