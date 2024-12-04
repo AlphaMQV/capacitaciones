@@ -1,11 +1,20 @@
+import { CommonModule } from '@angular/common'
 import { Component, inject, Input, OnInit } from '@angular/core'
 import { PostReaction, ResponsePost } from 'src/app/interfaces/post.interface'
+import { MaterialModule } from 'src/app/material/material.module'
 import { ToastService } from 'src/app/services/toast.service'
+import { CardPostButtonComponent } from './card-post-button/card-post-button.component'
 import { CardPostHelper } from './helpers/card-post.helper'
 import { CardPostService } from './services/card-post.service'
 
 @Component({
   selector: 'app-card-post',
+  standalone: true,
+  imports: [
+    CommonModule,
+    MaterialModule,
+    CardPostButtonComponent
+  ],
   templateUrl: './card-post.component.html',
   styleUrls: ['./card-post.component.scss']
 })

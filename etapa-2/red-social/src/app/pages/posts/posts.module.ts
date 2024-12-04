@@ -1,22 +1,20 @@
 import { CommonModule } from '@angular/common'
 import { NgModule } from '@angular/core'
 
+import { CardPostComponent } from 'src/app/components/card-post/card-post.component'
 import { MaterialModule } from 'src/app/material/material.module'
-import { CardPostComponent } from './card-post/card-post.component'
 import { PostsRoutingModule } from './posts-routing.module'
-import { PostsComponent } from './posts.component';
-import { CardPostButtonComponent } from './card-post/card-post-button/card-post-button.component'
+import { PostsComponent } from './posts.component'
 
 @NgModule({
   declarations: [
-    PostsComponent,
-    CardPostComponent,
-    CardPostButtonComponent
+    PostsComponent
   ],
   imports: [
     CommonModule,
     PostsRoutingModule,
-    MaterialModule
+    MaterialModule,
+    CardPostComponent
   ]
 })
 export class PostsModule { }

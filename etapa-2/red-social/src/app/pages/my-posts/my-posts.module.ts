@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule } from '@angular/common'
+import { NgModule } from '@angular/core'
 
-import { MyPostsRoutingModule } from './my-posts-routing.module';
-import { MyPostsComponent } from './my-posts.component';
-
+import { CardPostComponent } from 'src/app/components/card-post/card-post.component'
+import { MyPostsRoutingModule } from './my-posts-routing.module'
+import { MyPostsComponent } from './my-posts.component'
 
 @NgModule({
   declarations: [
@@ -11,7 +11,8 @@ import { MyPostsComponent } from './my-posts.component';
   ],
   imports: [
     CommonModule,
-    MyPostsRoutingModule
+    MyPostsRoutingModule,
+    CardPostComponent
   ]
 })
 export class MyPostsModule { }

@@ -1,5 +1,5 @@
 import { inject, Injectable } from '@angular/core'
-import { addDoc, collection, collectionData, DocumentData, DocumentReference, Firestore } from '@angular/fire/firestore'
+import { addDoc, collection, collectionData, DocumentData, DocumentReference, Firestore, query, where } from '@angular/fire/firestore'
 import { Observable } from 'rxjs'
 import { COLLECTION_POSTS } from '../constants/firestore-collection'
 import { Post, ResponsePost } from '../interfaces/post.interface'
@@ -15,6 +15,16 @@ export class PostService {
 
   getPosts (): Observable<ResponsePost[]> {
     return collectionData(this._collectionRef, { idField: 'id' }) as Observable<ResponsePost[]>
+  }
+
+  getPostsByUser (userId: string): Observable<ResponsePost[]> {
+    const qr = query(this._collectionRef,
+      where('userid', '==', userId)
+    )
+    return collectionData(
+      qr,
+      { idField: 'id' }
+    ) as Observable<ResponsePost[]>
   }
 
   async addPost (post: Post): Promise<DocumentReference<DocumentData>> {

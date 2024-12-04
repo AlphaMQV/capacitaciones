@@ -1,1 +1,6 @@
-<p>my-posts works!</p>
+<div class="container_posts">
+  <app-card-post
+    *ngFor="let post of posts"
+    [post]="post"
+  ></app-card-post>
+</div>
