@@ -1,6 +1,6 @@
 <div class="container_posts">
   <app-card-post
-    *ngFor="let post of posts"
+    *ngFor="let post of posts$ | async"
     [post]="post"
   ></app-card-post>
 </div>
