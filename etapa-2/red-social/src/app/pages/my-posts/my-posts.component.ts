@@ -1,5 +1,4 @@
 import { Component, inject, OnDestroy, OnInit } from '@angular/core'
-import { User } from '@angular/fire/auth'
 import { Subject, takeUntil } from 'rxjs'
 import { ResponsePost } from 'src/app/interfaces/post.interface'
 import { AuthService } from 'src/app/services/auth.service'
@@ -18,7 +17,7 @@ export class MyPostsComponent implements OnInit, OnDestroy {
   private readonly _onDestroy$ = new Subject<void>()
   private readonly _userChange$ = new Subject<void>()
 
-  private user: User | null = null
+  private userUid: string | null = null
   posts: ResponsePost[] = []
 
   ngOnInit (): void {
@@ -33,18 +32,18 @@ export class MyPostsComponent implements OnInit, OnDestroy {
   }
 
   private susbcribeUser (): void {
-    this._authService.authState$
+    this._authService.uid$
       .pipe(takeUntil(this._onDestroy$))
       .subscribe(user => {
         this._userChange$.next()
-        this.user = user
+        this.userUid = user
         this.subscribePostsByUser()
       })
   }
 
   private subscribePostsByUser (): void {
-    if (!this.user) return
-    this._postByUserService.getPostsByUser(this.user.uid)
+    if (!this.userUid) return
+    this._postByUserService.getPostsByUser(this.userUid)
       .pipe(takeUntil(this._userChange$))
       .subscribe(posts => {
         this.posts = posts

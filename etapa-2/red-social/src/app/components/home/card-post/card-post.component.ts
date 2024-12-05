@@ -1,5 +1,4 @@
 import { Component, inject, OnDestroy, OnInit } from '@angular/core'
-import { User } from '@angular/fire/auth'
 import { FormControl, FormGroup } from '@angular/forms'
 import { Subject, takeUntil } from 'rxjs'
 import { FormPost } from 'src/app/interfaces/form-post.interface'
@@ -24,7 +23,7 @@ export class CardPostComponent implements OnInit, OnDestroy {
 
   private readonly _onDestroy$ = new Subject<void>()
 
-  private user: User | null = null
+  private userUid: string | null = null
 
   private _formPost: FormGroup<FormPost>
 
@@ -52,9 +51,9 @@ export class CardPostComponent implements OnInit, OnDestroy {
   // ------------------------- oninit -------------------------
 
   private susbcribeUser (): void {
-    this._authService.authState$
+    this._authService.uid$
       .pipe(takeUntil(this._onDestroy$))
-      .subscribe(user => { this.user = user })
+      .subscribe(uid => { this.userUid = uid })
   }
 
   // ------------------------- functions -------------------------
@@ -69,14 +68,17 @@ export class CardPostComponent implements OnInit, OnDestroy {
 
   private async addPost (): Promise<void> {
     // si no hay un usuario logeado, retorna
-    if (!this.user) return
+    if (!this.userUid) {
+      this._toast.warning('No hay un usuario logeado')
+      return
+    }
     try {
       // setear loading en true
       this.loading = true
       // obtener el valor del formulario
       const formValue: Post = this._formPost.getRawValue()
       // setear el id del usuario
-      formValue.userid = this.user.uid
+      formValue.userid = this.userUid
       // enviar el post al servicio
       await this._formPostService.addPost(formValue)
       // mostrar mensaje de éxito

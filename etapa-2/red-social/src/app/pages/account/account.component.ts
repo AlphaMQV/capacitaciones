@@ -22,7 +22,7 @@ export class AccountComponent implements OnInit, OnDestroy {
   loading: boolean = true
 
   ngOnInit (): void {
-    this._authService.authState$
+    this._authService.user$
       .pipe(takeUntil(this._onDestroy$))
       .subscribe((user) => {
         this.user = user
