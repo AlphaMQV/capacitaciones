@@ -15,6 +15,7 @@ import { MaterialModule } from 'src/app/material/material.module'
 export class CardPostButtonComponent {
   // input
   @Input() icon: string
+  @Input() active: boolean = false
 
   // output
   @Output() send = new EventEmitter<void>()

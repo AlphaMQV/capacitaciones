@@ -28,6 +28,10 @@ export class AuthService {
     return this._uid$.asObservable()
   }
 
+  get uid (): string | null {
+    return this._uid$.value
+  }
+
   signOut (): Promise<void> {
     return signOut(this._auth)
   }
@@ -40,7 +44,7 @@ export class AuthService {
       return
     }
     // comparar si el uid es igual al uid actual
-    if (this._uid$.value === user.uid) return
+    if (this.uid === user.uid) return
     // setear el uid
     this._uid$.next(user.uid)
   }

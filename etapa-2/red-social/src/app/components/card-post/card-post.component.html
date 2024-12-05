@@ -12,7 +12,8 @@
         <div class="footer_button">
           <app-card-post-button
             icon="thumb_up"
-            (send)="changeButtonLike()"
+            [active]="activeLike"
+            (send)="handleButtonLike()"
           >
             {{ post.reactions.likes }} Likes
           </app-card-post-button>
@@ -20,7 +21,8 @@
         <div class="footer_button">
           <app-card-post-button
             icon="thumb_down"
-            (send)="changeButtonDislike()"
+            [active]="activeDislike"
+            (send)="handleButtonDislike()"
           >
             {{ post.reactions.dislikes }} Dislikes
           </app-card-post-button>

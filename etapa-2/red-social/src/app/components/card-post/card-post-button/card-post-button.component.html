@@ -1,4 +1,9 @@
-<button mat-button type="button" (click)="handleClick()">
+<button
+  mat-button
+  [ngClass]="{ 'active': active }"
+  type="button"
+  (click)="handleClick()"
+>
   <mat-icon [fontIcon]="icon"></mat-icon>
   <span>
     <ng-content></ng-content>

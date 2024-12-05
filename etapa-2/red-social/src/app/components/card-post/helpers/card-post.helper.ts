@@ -7,13 +7,14 @@ import { PostReaction } from 'src/app/interfaces/post.interface'
 export class CardPostHelper {
   calculateReactions (
     type: 'likes' | 'dislikes',
-    reactions: PostReaction
+    reactions: PostReaction,
+    active: boolean
   ): { reactions: PostReaction, views: number } {
     // clonar el objeto para no modificar el original
     const newReactions = structuredClone(reactions)
-    // incrementar el contador de dislikes
-    if (type === 'likes') newReactions.likes++
-    if (type === 'dislikes') newReactions.dislikes++
+    const operator = active ? -1 : 1
+    // incrementar el contador
+    newReactions[type] = newReactions[type] + operator
     // sumar los likes y dislikes
     const views = newReactions.dislikes + newReactions.likes
     return {

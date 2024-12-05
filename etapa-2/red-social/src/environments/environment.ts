@@ -4,12 +4,12 @@
 
 export const environment = {
   firebase: {
-    apiKey: 'AIzaSyAs4w7hJbNlvdQECbi13Xu0CAayLhut5gY',
-    authDomain: 'redsocial-1b087.firebaseapp.com',
-    projectId: 'redsocial-1b087',
-    storageBucket: 'redsocial-1b087.firebasestorage.app',
-    messagingSenderId: '870500817669',
-    appId: '1:870500817669:web:f32ab1822b88ee4065356c'
+    apiKey: 'AIzaSyCuqlNcVzfS9v7tx3E_L-8qlrSHpRd8bqU',
+    authDomain: 'capacitaciones-423e7.firebaseapp.com',
+    projectId: 'capacitaciones-423e7',
+    storageBucket: 'capacitaciones-423e7.firebasestorage.app',
+    messagingSenderId: '845708322787',
+    appId: '1:845708322787:web:9da511048246d21960e2d6'
   },
   apiPosts: {
     url: 'https://api-capacitaciones.vercel.app'

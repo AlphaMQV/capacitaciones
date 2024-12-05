@@ -3,6 +3,10 @@ button {
   padding: 0.125rem 0.25rem;
   min-width: auto;
   line-height: 1;
+  &.active {
+    background-color: #aac3ff;
+    color: #2138ae;
+  }
   mat-icon {
     width: 10px;
     height: 10px;
