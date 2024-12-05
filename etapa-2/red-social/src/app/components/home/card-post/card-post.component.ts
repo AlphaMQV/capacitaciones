@@ -5,10 +5,10 @@ import { Subject, takeUntil } from 'rxjs'
 import { FormPost } from 'src/app/interfaces/form-post.interface'
 import { Post } from 'src/app/interfaces/post.interface'
 import { AuthService } from 'src/app/services/auth.service'
-import { PostService } from 'src/app/services/post.service'
 import { ToastService } from 'src/app/services/toast.service'
 import { errorControlString } from 'src/app/utils/error-control-string'
 import { FormPostInit } from './helpers/form-post.init'
+import { FormPostService } from './services/form-post.service'
 
 @Component({
   selector: 'app-card-post',
@@ -18,7 +18,7 @@ import { FormPostInit } from './helpers/form-post.init'
 export class CardPostComponent implements OnInit, OnDestroy {
 // inject
   private readonly _authService = inject(AuthService)
-  private readonly _postService = inject(PostService)
+  private readonly _formPostService = inject(FormPostService)
   private readonly _formPostInit = inject(FormPostInit)
   private readonly _toast = inject(ToastService)
 
@@ -78,7 +78,7 @@ export class CardPostComponent implements OnInit, OnDestroy {
       // setear el id del usuario
       formValue.userid = this.user.uid
       // enviar el post al servicio
-      await this._postService.addPost(formValue)
+      await this._formPostService.addPost(formValue)
       // mostrar mensaje de éxito
       this._toast.success('Post creado correctamente')
       // resetear el formulario

@@ -3,7 +3,7 @@ import { User } from '@angular/fire/auth'
 import { Subject, takeUntil } from 'rxjs'
 import { ResponsePost } from 'src/app/interfaces/post.interface'
 import { AuthService } from 'src/app/services/auth.service'
-import { PostService } from 'src/app/services/post.service'
+import { PostByUserService } from 'src/app/services/post-by-user.service'
 
 @Component({
   selector: 'app-my-posts',
@@ -13,7 +13,7 @@ import { PostService } from 'src/app/services/post.service'
 export class MyPostsComponent implements OnInit, OnDestroy {
   // inject
   private readonly _authService = inject(AuthService)
-  private readonly _postService = inject(PostService)
+  private readonly _postByUserService = inject(PostByUserService)
 
   private readonly _onDestroy$ = new Subject<void>()
   private readonly _userChange$ = new Subject<void>()
@@ -44,7 +44,7 @@ export class MyPostsComponent implements OnInit, OnDestroy {
 
   private subscribePostsByUser (): void {
     if (!this.user) return
-    this._postService.getPostsByUser(this.user.uid)
+    this._postByUserService.getPostsByUser(this.user.uid)
       .pipe(takeUntil(this._userChange$))
       .subscribe(posts => {
         this.posts = posts

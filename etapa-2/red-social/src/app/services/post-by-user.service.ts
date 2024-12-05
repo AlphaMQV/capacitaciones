@@ -1,5 +1,5 @@
 import { inject, Injectable } from '@angular/core'
-import { collection, collectionData, Firestore } from '@angular/fire/firestore'
+import { collection, collectionData, Firestore, query, where } from '@angular/fire/firestore'
 import { Observable } from 'rxjs'
 import { COLLECTION_POSTS } from '../constants/firestore-collection'
 import { ResponsePost } from '../interfaces/post.interface'
@@ -7,12 +7,18 @@ import { ResponsePost } from '../interfaces/post.interface'
 @Injectable({
   providedIn: 'root'
 })
-export class PostService {
+export class PostByUserService {
   // inject
   private readonly _firestore = inject(Firestore)
 
-  getPosts (): Observable<ResponsePost[]> {
+  getPostsByUser (userId: string): Observable<ResponsePost[]> {
     const ref = collection(this._firestore, COLLECTION_POSTS)
-    return collectionData(ref, { idField: 'id' }) as Observable<ResponsePost[]>
+    const qr = query(ref,
+      where('userid', '==', userId)
+    )
+    return collectionData(
+      qr,
+      { idField: 'id' }
+    ) as Observable<ResponsePost[]>
   }
 }
