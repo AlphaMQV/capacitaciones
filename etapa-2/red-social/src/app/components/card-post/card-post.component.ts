@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common'
 import { Component, inject, Input, OnDestroy, OnInit } from '@angular/core'
 import { Subject, takeUntil } from 'rxjs'
 import { Interaction, ResponseInteraction } from 'src/app/interfaces/interaction.interface'
-import { PostReaction, ResponsePost } from 'src/app/interfaces/post.interface'
+import { FieldReaction, PostReaction, ResponsePost } from 'src/app/interfaces/post.interface'
 import { MaterialModule } from 'src/app/material/material.module'
 import { AuthService } from 'src/app/services/auth.service'
 import { ToastService } from 'src/app/services/toast.service'
@@ -67,62 +67,38 @@ export class CardPostComponent implements OnInit, OnDestroy {
 
   // --------------------- Functions ---------------------
 
-  async handleButtonLike (): Promise<void> {
+  async handleButton (type: FieldReaction): Promise<void> {
     if (!this.userUid) return
     try {
       await Promise.all([
         this._cardPostService.setReactions(
           this.post.id,
           this.userUid,
-          this.getInteractionLike()
+          this.getInteraction(type)
         ),
-        this.changeButtonLike()
+        this.changeButton(type, this.activeLike)
       ])
     } catch {
       this._toast.error('Error al actualizar el post')
     }
   }
 
-  async handleButtonDislike (): Promise<void> {
-    if (!this.userUid) return
-    try {
-      await Promise.all([
-        this._cardPostService.setReactions(
-          this.post.id,
-          this.userUid,
-          this.getInteractionDisLike()
-        ),
-        this.changeButtonDislike()
-      ])
-    } catch {
-      this._toast.error('Error al actualizar el post')
-    }
-  }
-
-  private getInteractionLike (): Interaction {
-    return {
-      like: !this.activeLike,
+  private getInteraction (type: FieldReaction): Interaction {
+    const interaction = {
+      like: this.activeLike,
       dislike: this.activeDislike
     }
-  }
-
-  private getInteractionDisLike (): Interaction {
-    return {
-      like: this.activeLike,
-      dislike: !this.activeDislike
+    if (type === 'likes') {
+      interaction.like = !interaction.like
+    } else {
+      interaction.dislike = !interaction.dislike
     }
+    return interaction
   }
 
-  private async changeButtonLike (): Promise<void> {
+  private async changeButton (type: FieldReaction, active: boolean): Promise<void> {
     // obtener las nuevas reacciones
-    const { reactions, views } = this._cardPostHelper.calculateReactions('likes', this.post.reactions, this.activeLike)
-    // actualizar el post
-    await this.updatePostReactions(reactions, views)
-  }
-
-  private async changeButtonDislike (): Promise<void> {
-    // obtener las nuevas reacciones
-    const { reactions, views } = this._cardPostHelper.calculateReactions('dislikes', this.post.reactions, this.activeDislike)
+    const { reactions, views } = this._cardPostHelper.calculateReactions(type, this.post.reactions, active)
     // actualizar el post
     await this.updatePostReactions(reactions, views)
   }

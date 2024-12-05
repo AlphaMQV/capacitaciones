@@ -13,7 +13,7 @@
           <app-card-post-button
             icon="thumb_up"
             [active]="activeLike"
-            (send)="handleButtonLike()"
+            (send)="handleButton('likes')"
           >
             {{ post.reactions.likes }} Likes
           </app-card-post-button>
@@ -22,7 +22,7 @@
           <app-card-post-button
             icon="thumb_down"
             [active]="activeDislike"
-            (send)="handleButtonDislike()"
+            (send)="handleButton('dislikes')"
           >
             {{ post.reactions.dislikes }} Dislikes
           </app-card-post-button>
