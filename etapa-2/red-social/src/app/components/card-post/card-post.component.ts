@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common'
 import { Component, inject, Input, OnDestroy, OnInit } from '@angular/core'
+import { MatCardModule } from '@angular/material/card'
 import { Subject, takeUntil } from 'rxjs'
 import { Interaction, ResponseInteraction } from 'src/app/interfaces/interaction.interface'
 import { FieldReaction, PostReaction, ResponsePost } from 'src/app/interfaces/post.interface'
@@ -16,6 +17,7 @@ import { CardPostService } from './services/card-post.service'
   imports: [
     CommonModule,
     MaterialModule,
+    MatCardModule,
     CardPostButtonComponent
   ],
   templateUrl: './card-post.component.html',

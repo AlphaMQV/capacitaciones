@@ -15,8 +15,7 @@ import { MaterialModule } from './material/material.module'
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +26,8 @@ import { MaterialModule } from './material/material.module'
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    NavComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
