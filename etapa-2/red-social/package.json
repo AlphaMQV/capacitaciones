@@ -1,6 +1,9 @@
 {
   "name": "red-social",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -15,16 +18,22 @@
     "@angular/common": "^14.2.0",
     "@angular/compiler": "^14.2.0",
     "@angular/core": "^14.2.0",
-    "@angular/fire": "^7.4.0",
+    "@angular/fire": "^7.6.1",
     "@angular/forms": "^14.2.0",
     "@angular/material": "^14.2.7",
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
+    "firebase-tools": "^12.9.1",
     "ngx-toastr": "^15.2.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
+  },
+  "overrides": {
+    "@angular/fire": {
+      "rxfire": "6.0.3"
+    }
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.2.13",
@@ -32,18 +41,12 @@
     "@angular/compiler-cli": "^14.2.0",
     "@types/jasmine": "~4.0.0",
     "@types/node": "^12.11.1",
-    "@typescript-eslint/eslint-plugin": "^8.15.0",
-    "@typescript-eslint/parser": "^8.15.0",
     "jasmine-core": "~4.3.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
-    "standard": "^17.1.2",
     "typescript": "~4.7.2"
-  },
-  "eslintConfig": {
-    "extends": ".eslintrc.json"
   }
 }
